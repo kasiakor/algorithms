@@ -1,0 +1,20 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci numbers</title>
+</head>
+<body>
+		<p id="demo"> First 100 Fibonacci numbers</p>
+
+	<script>
+		myArray = [];
+		for (var i = 2; i < 100; i++) {
+			myArray[0] = 0;
+			myArray[1] = 1;
+			myArray[i] = myArray[i-1] + myArray[i-2];
+		};
+
+		document.getElementById("demo").innerHTML = myArray;
+	</script>
+</body>
+</html>
