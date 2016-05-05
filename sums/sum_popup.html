@@ -1,0 +1,25 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Sum of numbers</title>
+</head>
+<body>
+		<p id="demo">Calculate the sum of numbers from the pop up</p>
+
+	<script>
+		input = parseInt(prompt ("Put a number", ""), 10);
+		allInput = [];
+		while(input) {
+			allInput.push(input);
+			input = parseInt(prompt ("Put a number", ""), 10);
+		}
+
+		sum = 0;
+
+		for(var i = 0; i < allInput.length; i++) {
+				sum = sum + allInput[i];
+		}
+		document.getElementById('demo').innerHTML = sum;
+	</script>
+</body>
+</html>
