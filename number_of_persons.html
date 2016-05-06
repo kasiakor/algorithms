@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number of persons/handshakes</title>
+	<style>
+		#demo {
+			white-space: pre-wrap;
+		}
+	</style>
+</head>
+<body>
+		<p id="demo"> Calculate number persons in the room using number of handshakes</p>
+
+	<script>
+		handshakes = parseInt(prompt("Put an number", ""), 10);
+
+		i = 0;
+		iHandshakes = 0;
+		
+		while (iHandshakes < handshakes) {
+
+			i += 1;
+			iHandshakes = iHandshakes + i-1;
+		}
+ 		document.getElementById('demo').innerHTML +="\n Number of people " + i + " Number of handshakes " + iHandshakes;
+
+	</script>
+</body>
+</html>
