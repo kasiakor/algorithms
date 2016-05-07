@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiply array elements</title>
+</head>
+<body>
+		<p id="demo">Multiply array elements by number</p>
+
+	<script>
+		myArray = [23, 7, 5, 12, 19];
+
+		function timesTen (element, index, array) {
+		 	array[index] = element * 10;
+		 };
+
+		 myArray.forEach(timesTen);
+
+		document.getElementById('demo').innerHTML = myArray;
+	</script>
+</body>
+</html>
