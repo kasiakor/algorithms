@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Map method</title>
+</head>
+<body>
+	<p id="demo">Array map method</p>
+
+	<script>
+		myArray = [3, 7, 9, 12, 34, 13, 93, 27];
+
+		function tax (element) {
+			return "£" + (element * 1.2).toFixed(2);
+		}
+		newArray = myArray.map(tax);
+
+		document.getElementById('demo').innerHTML += "<br>" + myArray + "<br>";
+		document.getElementById('demo').innerHTML += "<br>" + newArray + "<br>";
+	</script>
+</body>
+</html>
