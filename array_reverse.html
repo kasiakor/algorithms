@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array reverse</title>
+</head>
+<body>
+	<p id="demo">Return an array with elements in reverse order </p>
+
+	<script>	
+		input = parseInt(prompt ("Put a number", "1"), 10);
+		myArray = [];
+		while(input) {
+			myArray.push(input);
+			input = parseInt(prompt ("Put a number", "1"), 10);
+		}
+
+		x = myArray.length;
+		newArray = [];
+
+		for (var i = 0; i < x; i++) {
+			var j = x - (i + 1);
+			newArray[j] = myArray[i];
+		};
+		document.getElementById("demo").innerHTML = myArray;
+		document.getElementById("demo").innerHTML +="<br>" + newArray;
+	</script>
+</body>
+</html>
