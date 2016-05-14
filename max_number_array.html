@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Max number</title>
+</head>
+<body>
+	<p id="demo">Find the max number in the array</p>
+	<script>
+
+		list_of_num = [3, -5, 17, 89, 13, -189, 44];
+		var maxNumber = list_of_num[0];
+	
+		for(var i = 1; i < list_of_num.length; i++) {
+			
+			if(list_of_num[i] > maxNumber) {
+				maxNumber = list_of_num[i];	
+			}
+		}
+		document.getElementById("demo").innerHTML = list_of_num;
+		document.getElementById("demo").innerHTML +="<br>" + maxNumber;
+	</script>		
+</body>
+</html>
