@@ -1,0 +1,46 @@
+<!Doctype html>
+    <head>
+        <title>Write a program that prints all prime numbers. (Note: if your programming language does not support arbitrary size numbers, printing all primes up to the largest number you can easily represent is fine too.)</title>
+    </head>
+    <body bg-color="#764848">
+        <button onclick="myFunction();">Click me
+        </button>
+        <div id="demo"></div>
+        <script>
+        function myFunction () {   
+           a = function (number) {
+                
+               if(number%2 !==0 ) {
+                    return true;
+                } 
+               else {
+                    return false;
+               }    
+           }  
+           
+           
+           number = 3;
+            
+            for (number =3; number < 30; number ++ ) {
+            b = function (number) {
+               result = true;
+               for (var i = 2; i < number; i++) {
+                if(number%i ===0) {    
+                result = false;
+                    
+                } 
+              
+                }  
+            return result;
+            }
+            if (b(number) == true ) {
+                console.log(b(number).toString()+number); 
+            }
+              
+            }
+            
+          
+           };
+        </script>
+    </body>
+</html>
