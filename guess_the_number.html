@@ -1,0 +1,40 @@
+<!Doctype html>
+    <head>
+        <title>Write a guessing game where the user has to guess a secret number. After every guess the program tells the user whether their number was too large or too small. At the end the number of tries needed should be printed. I counts only as one try if they input the same number multiple times consecutively</title>
+    </head>
+    <body bg-color="#764848">
+        <button onclick="myFunction();">Click me
+        </button>
+        <div id="demo"></div>
+        <script>
+        function myFunction () {  
+            
+            var answer = Math.floor((Math.random() * 30) + 1);
+            var number = prompt("Guess the number");
+            
+            counter = 1;
+
+            for (i = 0; i < number; i ++) {
+                if (number < answer) {
+                alert("Your number is too small");
+                 var number = prompt("Guess the number");
+                    counter ++;
+                } 
+                else if (number > answer) {
+                    alert("Your number is too big");
+                    var number = prompt("Guess the number"); 
+                    counter ++;
+                }   
+            }
+                if (number = answer) {
+                alert("Congratulations. You guessed ther number");
+                 console.log(counter);
+                    
+                }  
+                    
+                };
+
+
+        </script>
+    </body>
+</html>
